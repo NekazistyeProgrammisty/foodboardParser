@@ -16,4 +16,4 @@ jobs:
       - run: chmod 600 "$HOME/.ssh/key"
       # Deploy
       - run: echo "zaebis"
-      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . root@85.193.88.165:/root/foodboard_parser/
+      - run: rsync "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . root@85.193.88.165:/root/foodboard_parser/
